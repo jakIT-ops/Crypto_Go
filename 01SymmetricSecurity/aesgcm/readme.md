@@ -1,0 +1,3 @@
+If AES is required or chosen, AES-GCM is often the best choice; it pairs the AES block cipher with the GCM block cipher mode. It is an AEAD cipher: authenticated encryption with additional data. It encrypts some data, which will be authenticated along with some optional additional data that is not encrypted. The key length is 16 bytes for AES-128, 24 bytes for AES-192, or 32 bytes for AES-256. It also takes a nonce as input, and the same caveats apply to the nonce selection here. Another caveat is that GCM is difficult to implement properly, so it is important to vet the quality of the packages that may be used in a system using AES-GCM.
+
+
